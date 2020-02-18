@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style>
+		li.active {
+			background-color: cyan;
+			font-size: 16px;
+		}
+		.routes>div{
+		display:none;
+		}
+		.routes>div.active{
+		display:block;
+		}
+		.card{
+		margin:8px;
+		background-color:yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome!!!</h1>
+
+	<ul id="list">
+		<li class="active">
+			<a href="#" menu="users">Users</a>
+		</li>
+		<li>
+			<a href="#" menu="albums">Albums</a>
+		</li>
+	</ul>
+	<div class="routes">
+		<div class="users active card">
+			<h1>USERS</h1>
+		<dl>
+		    <dt>Name</dt><dd>Leanne Graham</dd>
+		    <dt>User name</dt><dd>sicnere@april.biz</dd>
+		    <dt>email</dt><dd>peter@gmail.com</dd>
+		</dl>
+		<h3>Adress</h3>
+		<dl>
+		  <dt>street</dt><dd>greene</dd>
+		  <dt>city</dt><dd>mexico city</dd>
+		</dl>
+		</div>
+		<div class="albums">
+			<h1>ALBUMS</h1>
+		</div>
+		<script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
