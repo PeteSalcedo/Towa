@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style>
+		li.active {
+			background-color: cyan;
+			font-size: 16px;
+		}
+		.routes>div{
+		display:none;
+		}
+		.routes>div.active{
+		display:block;
+		}
+		.card{
+		margin:8px;
+		background-color:yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome!!!</h1>
+
+	<ul id="list">
+		<li class="active">
+			<a href="#" menu="users">Users</a>
+		</li>
+		<li>
+			<a href="#" menu="albums">Albums</a>
+		</li>
+	</ul>
+	<div class="routes">
+		<div class="users active">
+			<div class="users card">
+			</div>
+
+		</div>
+		<div class="albums">
+			<h1>ALBUMS</h1>
+		</div>
+		<script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
